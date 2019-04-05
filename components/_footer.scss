@@ -1,0 +1,98 @@
+footer
+{
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    width: 100%;
+    .footer__list
+    {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        color: $color-white;
+        width: 100%;
+        li
+        {
+            padding: .5rem;
+
+        }
+        &__container
+        {
+            font-size: .8rem;
+            width: 20%;
+        
+            &__title
+            {
+                text-transform: uppercase;
+                font-size: 1rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+                list-style:none;
+            }
+            &__contact--list
+            {
+                display: flex;
+                flex-wrap: wrap;
+                list-style:none;
+                li
+                {
+                    display: flex;
+                }
+                i
+                {
+                    padding-right: 1rem;
+                }
+            }
+        }
+        }
+    }
+    .footer__list__search-bar
+    {
+        margin: 2rem;
+        color: $color-white;
+        width: 100%;
+        display: flex;
+        justify-content:space-around;
+        flex-wrap: nowrap;
+        background-color: rgba(10, 10, 10, 0.479);
+       
+        &__search
+        {
+            
+            border-radius: 2rem;
+            background-color:$color-darkest-gray;
+            margin-left: 2rem;
+            input{  
+                color: $color-white;
+                text-align: center;
+                border: 1px solid $color-darkest-gray;
+                height: 100%;
+                border-radius: 2rem;
+                background-color:$color-darkest-gray;
+            }
+        }
+        &__icon
+        {
+            ul {
+                list-style: none;
+                    li{
+                        display: inline-block;
+                        background-color: $color-darkest-gray;
+                        width: 3rem;
+                        height: 3rem;
+                        border-radius: 50%;
+                        text-align: center;
+                        
+                        &:hover
+                        {
+                            background-color: $color-primary;
+                        }
+                        i{
+                           margin: 0.9rem auto;
+                        }
+                    }
+                }
+            
+
+        }
+
+}

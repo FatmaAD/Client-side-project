@@ -1,0 +1,16 @@
+.item__title
+{   
+    margin-left: 1.5rem;
+    width:25%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+    border-bottom: 1px solid $color-highlight;
+    .first--word
+    {
+        border-bottom: 2px solid $color-black;
+    }
+}

@@ -1,0 +1,23 @@
+.bold-text 
+{
+    color:$color-primary-thick;
+    font-style: bold;
+    text-transform: uppercase;
+    &__thinnest
+    {
+        font-weight: 400;
+    }
+    &__thin{
+        font-weight: 600;
+    }
+    &__thick
+    {
+        font-weight: 700;
+    }
+}
+
+.discount
+{
+    text-decoration: line-through;
+    color: $color-dark-gray;
+}

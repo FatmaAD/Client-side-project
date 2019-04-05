@@ -1,0 +1,61 @@
+//main div that has the img and text
+
+.price-card
+{
+    border: 1px solid $color-dark-gray;
+    position: relative; 
+    z-index: 1;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    width: 19%;
+
+    .card__text{
+        text-align: center;
+    }
+    .price{
+        color: $color-primary-thick;
+        font-weight: 600;
+    }
+   
+    &:hover .list__container
+        {
+            visibility: visible;
+            bottom: 6rem;
+        }
+
+        &:hover::after
+        {
+            visibility: visible
+        }
+
+    &::after
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        z-index: 4;
+        background-color: rgba(216, 216, 206, 0.295);
+    }
+    .list__container
+    {
+        justify-content: center;
+        width: 100%;
+        z-index:5;
+        visibility: hidden;
+        position: absolute;
+        bottom: 2rem;
+        transition: bottom 0.3s linear;
+    }
+    .list-of-icons{
+        margin-left: 13%;
+        list-style: none;
+        display: inline;
+    }
+    .list-of-icons li{
+        padding: 1rem;
+    }
+}

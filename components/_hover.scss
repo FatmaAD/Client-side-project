@@ -1,0 +1,25 @@
+.hover
+{
+    &__default
+    {
+        color:$color-black;
+        &:hover
+        {
+            color: $color-primary-thick;
+        }
+    }
+    
+    &__dark
+        {
+            color: $color-primary-thick;  
+        &:hover
+        {
+            color: $color-black;
+        }
+
+        }
+    &:hover{
+        cursor: pointer;
+    }   
+}
+

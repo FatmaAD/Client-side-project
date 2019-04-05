@@ -1,0 +1,39 @@
+.item__content
+{
+    margin-left: 1.5rem;
+    width: 25%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    .item__description
+    {
+        margin: 1rem;
+        .list__icons
+        {
+            z-index: 5;
+            justify-content: center;
+            visibility: hidden;
+            position: absolute;
+            bottom: -1rem;
+            transition: bottom 0.2s linear;
+            background-color: $color-white;
+        }
+    }
+    .item__image
+    {
+        width: 33.333%;
+        border: 1px solid transparent;
+        box-sizing: border-box;
+    }
+    &:hover 
+    .item__image 
+        {
+        cursor: pointer;
+        border: 1px solid $color-primary;
+        }
+    &:hover .list__icons
+        {
+            visibility: visible;
+            bottom: 0rem;
+        }
+}

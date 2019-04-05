@@ -1,0 +1,40 @@
+.btn
+{
+    padding: .7rem 2.5rem;
+    margin: 1rem;
+    font-size: .9rem;
+    font-weight: 600;
+    border-radius: 3rem;
+    color: $color-black;    
+    &--primary
+    {   text-transform: capitalize;
+        background-color:$color-primary-thick;
+        &:hover
+        {
+            color: $color-white;
+            background-color: $color-primary-darker;
+        }
+        
+    }
+    
+    &--dark
+    {
+        &:hover
+        {   color: $color-white;
+            background-color: $color-black;
+        }
+    }
+
+    &--default
+    {
+        text-transform: uppercase;
+        background-color:$color-highlight;
+        border: 1px solid rgb(214, 214, 214);
+        
+        &:hover
+        {
+            background-color:$color-primary-thick;
+            color: $color-white;
+        }
+    }
+}

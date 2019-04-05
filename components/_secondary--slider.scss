@@ -1,0 +1,36 @@
+
+.secondary--slider
+{
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    background-color: $color-highlight;
+    width: 100%;
+    height: 15rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    .arrow--button
+    {
+        visibility: hidden;
+    }
+
+    &__images
+    {
+        box-sizing: border-box;
+        border: 1px solid transparent;
+        height: 7rem;
+        img
+        {
+            height: 100%;
+        }
+    }
+    &__images:hover
+    {
+    border: 1px solid $color-primary;
+    }
+    &:hover .arrow--button
+    {
+        visibility: visible;
+    }
+    
+}

@@ -1,0 +1,20 @@
+.sub-title h2
+{
+    margin-top: 2rem;
+    text-transform: uppercase;
+    color: $color-black;
+    font-size:1.5rem;
+    text-align: center;
+    font-weight: 600;
+        span{
+            color: $color-primary-thick;
+        }
+}
+
+.sub-title p{
+    color:$color-dark-gray;
+    text-align: center;
+    font-weight:400; 
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
